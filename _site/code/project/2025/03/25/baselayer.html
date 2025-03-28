@@ -7,8 +7,8 @@
 <meta name="generator" content="Jekyll v3.10.0" />
 <meta property="og:title" content="Baselayer" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Have you ever written a pointer-hash map? It is surprisingly fun." />
-<meta property="og:description" content="Have you ever written a pointer-hash map? It is surprisingly fun." />
+<meta name="description" content="Have you ever written a pointer-hash map? It is surprisingly fun and satisfying." />
+<meta property="og:description" content="Have you ever written a pointer-hash map? It is surprisingly fun and satisfying." />
 <link rel="canonical" href="http://localhost:4000/code/project/2025/03/25/baselayer.html" />
 <meta property="og:url" content="http://localhost:4000/code/project/2025/03/25/baselayer.html" />
 <meta property="og:site_name" content="Explorations" />
@@ -17,7 +17,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Baselayer" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-03-25T10:59:15+01:00","datePublished":"2025-03-25T10:59:15+01:00","description":"Have you ever written a pointer-hash map? It is surprisingly fun.","headline":"Baselayer","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/code/project/2025/03/25/baselayer.html"},"url":"http://localhost:4000/code/project/2025/03/25/baselayer.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-03-25T10:59:15+01:00","datePublished":"2025-03-25T10:59:15+01:00","description":"Have you ever written a pointer-hash map? It is surprisingly fun and satisfying.","headline":"Baselayer","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/code/project/2025/03/25/baselayer.html"},"url":"http://localhost:4000/code/project/2025/03/25/baselayer.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Explorations" /></head>
 <body><header class="site-header" role="banner">
@@ -47,20 +47,21 @@
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <p>Have you ever written a pointer-hash map? It is surprisingly fun.</p>
+    <p>Have you ever written a pointer-hash map? It is surprisingly fun and satisfying.</p>
 
-<p>At some point I discovered the existence of custom memory allocators, custom buffers and length-based strings.
-I started writing my own versions and collected some of the code in homebrew libraries (<a href="https://github.com/climbcat/baselayer">baselayer</a> and <a href="https://github.com/climbcat/cbui">cbui</a>).</p>
+<p>Here’s my baselayer project - many such projects exist out there - and this one is what I have come up with so far. At some point I discovered 
+the existence of custom memory allocators, custom buffers and length-based strings, and started writing my own versions. Some of the code 
+was collected in homebrew libraries (<a href="https://github.com/climbcat/baselayer">baselayer</a> and <a href="https://github.com/climbcat/cbui">cbui</a>).</p>
 
-<p>The libraries provide many of the basic tools for effectively writing programs in a small language like C, and explore new techniques.
-It feels luxurious to not have to worry about gigabytes of helper libraries, and reading monolithic APIs, just to do relatively basic 
-and normal things in C.</p>
+<p>Such “baselayer” libraries provide basic utilities for effective programming in a small language like C. It feels luxurious to have light-weight
+tools at hand, not having to worry about installing and linking gigabytes of helper libraries, or reading monolithic APIs, just to do 
+relatively basic and normal things.</p>
 
 <p>The concept of header-only libraries seemed well worth copying. Using “unity build”, the entire program is statically compiled from source.
 Code is organized in .h files, meaning the headers and implementations are found in the same place. This is already standard practice in 
 most languages - so why not?</p>
 
-<p>A rudimentary CMake config file in included, for convenience and for seamless integration with certain tools.</p>
+<p>A rudimentary CMake config file in included, for linking convenience in the cases where this is needed, and for seamless integration with certain tools.</p>
 
 
   </div><a class="u-url" href="/code/project/2025/03/25/baselayer.html" hidden></a>

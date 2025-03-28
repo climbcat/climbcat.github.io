@@ -13,18 +13,18 @@ Especially given important constraints such as team skills, the nature of users,
 This site itself uses a markdown-based static html/website generator called Jekyll - which is convenient for someone who isn't
 focused on "web stuff".
 
-I wrote my first programs in high school, and picked it up later in my studies in physics, which culminated in a simulation of magnetic dynamics
+I wrote my first programs in high school, and picked it up later during my physics studies, which culminated in a simulation of magnetic dynamics
 in nanoparticles, the core of my masters thesis from 2008. For a while I saw programming as just a tool, but realized
 that it came very naturally to me. So I left academia and got my first job as a professional software developer the same year.
 
 Programmers should ideally struggle with the hard fundamentals of writing larger projects, and be able to secure code maintainability and 
 extensibility over its lifetime, keeping complexity managable. Yet very often, projects tend to grow towards inevitable abandonment or
-petrification due to complexity. They rarely shrink at all. Many projects becomes so utterly convoluted that changing normal things seems
-overwealming, slow and risky.
+petrification due to complexity. Some rarely shrink at all. Many projects becomes so utterly convoluted that changing normal things seems
+overwhelming, slow and risky.
 
-The "low-level" programming method is to write the initial code quickly, paying no mind to advanced methodologies. Then "compress" it afterwards 
-by re-writing, extracting commonalities, and creating convenient after-the-fact abstractions. Bearing little mind to pre-conceived forms
-and shapes, this technique interestingly applies to all levels of code "abstraction". It is a proper way to write.
+The "low-level" programming method is to write the initial code quickly and procedurally, paying no mind to advanced methodologies.
+Then "compress" it afterwards by re-writing, extracting commonalities, and creating convenient after-the-fact abstractions.
+Bearing little mind to pre-conceived forms and shapes, this technique interestingly applies to all levels of code "abstraction".
 
 Custom code is best, if you can get it: The advantage are control and focus, as well as efficiency and potentially, performance.
 Always seek to minimize code size and dependencies.
